@@ -44,8 +44,9 @@
     </ul>
     <h2>1. Introduction</h2>
     <p>The relationship between caffeine consumption and productivity has been documented since
-        the discovery of coffee in 850 CE <i>[1]</i>. However, traditional models fail to explain the <em>Afternoon
-            Paradox</em>
+        the discovery of coffee in 850 CE <i>[1]</i>. However, traditional models fail to explain the <dfn
+            id="def-afternoon-paradox"><em>Afternoon
+                Paradox</em></dfn>
         — the
         phenomenon whereby productivity decreases inversely with coffee consumption after 2:00 PM local time.
     </p>
@@ -96,10 +97,10 @@
     <strong>Example replicate command (experimental automation):</strong>
     <code>./qed_control --mode entangle --temp 77K --pressure 1.21GPa
                 --duration 00:04:30 --output run_2025-06-12.json </code><br>
-    Use <code>Ctrl + C</code> to cancel in the terminal if you need to
+    Use <kbd>Ctrl</kbd> + <kbd>C</kbd> to cancel in the terminal if you need to
     abort the run.<br>
     <figure>
-        <img src="images/starbucks.png" alt="A picture of the inside of a Starbucks coffee shop.">
+        <img src="images/starbucks.jpg" alt="A picture of the inside of a Starbucks coffee shop.">
         <figcaption><b>Figure 1:</b> Schematic representation of the
             quantum coffee preparation apparatus. The entanglement chamber (center)
             maintains coherence through magnetic confinement.</figcaption>
@@ -145,34 +146,86 @@
                 <td>&lt;0.001</td>
             </tr>
         </tbody>
-        <h3>3.2 Temporal Analysis</h3>
-        <p>The quantum entanglement effect showed remarkable persistence throughout the workday. Peak productivity
-            occurred at
-            10:47 AM, with sustained effects until 4:23 PM.</p>
-        <figure>
-            <svg>
-                <line x1="0" y1="10" x2="20" y2="20" />
-                <line x1="20" y1="20" x2="40" y2="10" />
-                <line x1="40" y1="10" x2="60" y2="80" />
-            </svg>
-        </figure>
-        Figure 2: Temporal distribution of productivity enhancement. The
-        shaded region indicates the quantum coherence window. NOTE: The svg does not have to match the sample provided
-        above. Our findings support the hypothesis that quantum entanglement can be maintained in biological systems at
+    </table>
+    <h3>3.2 Temporal Analysis</h3>
+    <p>The quantum entanglement effect showed remarkable persistence throughout the workday. Peak productivity
+        occurred at
+        10:47 AM, with sustained effects until 4:23 PM.</p>
+    <figure>
+        <svg viewBox="0 0 400 200">
+
+            <line x1="40" y1="10" x2="40" y2="180" stroke="#333" stroke-width="1" />
+            <line x1="40" y1="180" x2="380" y2="180" stroke="#333" stroke-width="1" />
+
+
+            <polyline points="40,150 100,100 160,80 220,60 280,100 340,150" fill="none" stroke="#2563eb"
+                stroke-width="2" />
+        </svg>
+        <figcaption>
+            <strong>Figure 2:</strong> Temporal distribution of productivity enhancement. The
+            shaded region indicates the quantum coherence window.
+        </figcaption>
+    </figure>
+    <h2>4. Discussion</h2>
+    <p>Our findings support the hypothesis that quantum entanglement can be maintained in
+        biological systems at
         room temperature, contrary to conventional wisdom. The mechanism appears to involve resonance between caffeine
-        molecules and neural microtubules. Note on Safety No adverse effects were observed during the study period.
+        molecules and neural microtubules.</p>
+    <h3>Note on Safety</h3>
+    <p>No adverse effects were observed during the study period.
         However, three participants reported experiencing "temporal displacement sensations" which resolved
-        spontaneously. This study demonstrates that quantum-entangled coffee represents a viable approach to enhancing
-        workplace productivity. Key findings include: Quantum coherence can be maintained in coffee for up to 5 minutes
-        post-brewing Entangled caffeine molecules produce measurable improvements in cognitive function The Afternoon
-        Paradox can be overcome through quantum mechanical principles Future work will explore the possibility of
-        quantum tea and investigate whether decaf coffee exists in a state of quantum superposition until observed.
-        Smith, J. "A Brief History of Caffeine Addiction." Journal of Procrastination Studies, vol. 42, 2020, pp.
-        123-145. Johnson, K., et al. "Quantum Superposition in Beverage Sciences." Physical Review Coffee, vol. 13,
-        2024, pp. 456-478. Chen, L. "Temporal Mechanics of Office Productivity." Annals of Corporate Physics, vol. 7,
-        2023, pp. 89-101. Correspondence should be directed to: Dr. Wilhelmina Quark Department of Applied Caffeination,
-        Globocorp Research Institute 42 Quantum Way, New New York, NY 10001 wquark@globocorp.com © 2025 Globocorp
-        Research Institute. This research was funded by Grant #QC-2025-42 from the Department of Applied Caffeination.
+        spontaneously.</p>
+    <h2>5. Conclusions</h2>
+    <p>This study demonstrates that quantum-entangled coffee represents a viable approach to enhancing
+        workplace productivity. Key findings include:</p>
+    <ul>
+        <li>Quantum coherence can be maintained in coffee for up to 5 minutes
+            post-brewing</li>
+        <li>Entangled caffeine molecules produce measurable improvements in cognitive function</li>
+        <li>The Afternoon
+            Paradox can be overcome through quantum mechanical principles</li>
+    </ul>
+    <p>Future work will explore the possibility of
+        quantum tea and investigate whether decaf coffee exists in a state of quantum superposition until observed.</p>
+    <h2>References</h2>
+    <ol>
+        <li>Smith, J. "A Brief History of Caffeine Addiction." <i>Journal of Procrastination Studies</i>, vol. 42, 2020,
+            pp. 123-145.</li>
+        <li>Johnson, K., et al. "Quantum Superposition in Beverage Sciences." <i>Physical Review Coffee</i>, vol. 13,
+            2024, pp. 456-478.</li>
+        <li>Chen, L. "Temporal Mechanics of Office Productivity." <i>Annals of Corporate Physics</i>, vol. 7, 2023, pp.
+            89-101.</li>
+    </ol>
+    <label for="favorite-bev">Favorite beverage:</label>
+    <select id="bev-select">
+        <optgroup label="common-coffee-types">
+            <option>Espresso</option>
+            <option>Americano</option>
+            <option>Latte</option>
+            <option>Mocha</option>
+        </optgroup>
+        <optgroup label="rare-coffee-types">
+            <option>Tuxedo Mocha</option>
+            <option>Milky Way</option>
+            <option>The Sandpiper</option>
+        </optgroup>
+    </select>
+    <datalist id="coolest-sounding-keyword">
+        <option value="corporate-physics"></option>
+        <option value="afternoon-paradox"></option>
+        <option value="microtubules"></option>
+    </datalist>
+    <button type="submit">Submit</button>
+    <em>Correspondence should be directed to: <br>
+        <address>
+            Dr. Wilhelmina Quark <br>
+            Department of Applied Caffeination, Globocorp Research Institute <br>
+            42 Quantum Way, New New York, NY 10001 <br>
+            <a href="mailto:wquark@globocorp.com">wquark@globocorp.com</a>
+        </address>
+    </em>
+    <small>© 2025 Globocorp Research Institute. This research was funded by Grant #QC-2025-42 from the Department of
+        Applied Caffeination.</small>
 </body>
 
 </html>
